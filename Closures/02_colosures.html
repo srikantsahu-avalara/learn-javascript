@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Creating Closure Example</title>
+    <script type="text/javascript">
+      function Counter() {
+        var counter = 0;
+        // Enclosed function
+        var Increment = function() {
+          counter++;
+          console.log(counter);
+        }
+        var getCounter = function() {
+          console.log('latest counter is::' + counter);
+        }
+        return { Increment, getCounter };
+      }
+
+      var x = new Counter();
+      x.Increment(); //1
+      x.Increment(); //2
+      //x.getCounter();
+      x.Increment(); //3
+      x.Increment();
+      x.Increment();
+      x.Increment();
+      x.Increment();
+      //x.getCounter();
+
+      var x1 = new Counter();
+    </script>
+</head>
+<body>
+  Open developer tool to debug the <b>closure </b>code example.
+</body>
+</html>

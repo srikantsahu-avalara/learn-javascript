@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Creating Closure Example</title>
+    <script type="text/javascript">
+    // define a function that increments a counter in a loop
+    function closureExample() {
+
+    var i = 0;
+
+    for (i = 0; i< 10 ;i++) {    
+        setTimeout(function() {
+            console.log('counter value is ' + i);
+        }, 1000);
+    }
+
+    }
+    // call the example function
+    closureExample();  
+    </script>
+</head>
+<body>
+  Open developer tool to debug the <b>closure </b>code example.
+</body>
+</html>

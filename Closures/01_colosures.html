@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Creating Closure Example</title>
+    <script type="text/javascript">
+      function sampleClosure() {
+        var firstName = 'srikant';
+
+        function printName() {
+          console.log(firstName);
+        }
+
+        callPrintName(printName);
+      }
+
+      function callPrintName(printName) {
+        printName();
+      }
+      
+      sampleClosure();
+    </script>
+</head>
+<body>
+  Open developer tool to debug the <b>closure </b>code example.
+</body>
+</html>
